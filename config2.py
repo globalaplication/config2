@@ -29,6 +29,6 @@ class load(object):
         data = open(self.file)
         for r in data:
             if (r.split(":")[0] == key):
-                return r.split(":")[1].strip("\n")
-        return
+                output = r.split(":")[1].strip("\n")
+        return output
             
